@@ -18,3 +18,11 @@ a:visited {
 a:hover, a:active {
     color: #eee;
 }
+img {
+    padding: auto;
+    margin: auto;
+    display:block;
+    margin: auto;
+    size: 1rem;
+    
+}
