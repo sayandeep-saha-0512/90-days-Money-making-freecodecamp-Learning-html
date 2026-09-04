@@ -19,9 +19,9 @@ a:hover, a:active {
     color: #eee;
 }
 img {
-    padding: auto;
+    max-width: 100%;
+    padding: 1.5rem;
     margin: auto;
     display:block;
     margin: auto;
-    size: 1rem;
 }
