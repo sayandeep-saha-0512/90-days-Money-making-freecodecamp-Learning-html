@@ -4,7 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Sayandeep Saha">
-        <meta name="description" content="This is the page where we can contain & create as I learn in HTML.">
+        <meta name="description" content="This is the page where we can contain and create as I learn in HTML.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- adding the icon/logo -->
         <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/500px-HTML5_logo_and_wordmark.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" type="image/x-icon">
         <!-- Linking the stylesheet -->
@@ -20,6 +21,7 @@
                     <li><a href="#html">Learning HTML</a></li>
                     <li><a href="#vacation">Vacation Plans</a></li>
                     <li><a href="#food">food</a></li>
+                    <li><a href="#places-to-avoid">Places to Avoid</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,7 +38,7 @@
         <p>Let me tell you how:
             <br>... I am learning about web development.
             <br>... I plan out my schedule for the day.
-            <br>... I attend my classes and lectures & use resources
+            <br>... I attend my classes and lectures &amp; use resources
             <!-- The MDN HTML Documentation -->
              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a>
             <br>... I work on my projects and assignments.
@@ -47,23 +49,53 @@
         
         <section id="vacation">
         <h2>I Am also Planning a Vacation</h2>
-        <p>I am really working hard so I am needed some rest to enjoy! &  relax</p>
+        <p>I am really working hard so I am needed some rest to enjoy! &amp; relax</p>
         <p>So, I am Living in kolkata, West Bengal, India. I am planning to go to Darjeeling, West Bengal, India for my vacation...</p>
             <!-- Places I want to visit -->
         <h3>Places to Visit:</h3>
         <p>Here are some details about my upcoming vacation...</p>
         <div class="places-to-visit">
             <ul>
-                <li>Darjeeling</li>
-                <li>Shimla</li>
-                <!-- <li>Goa</li> -->
+                <li>Darjeeling
+                    <img src="img/dargilling-images.jpg" alt="Darjeeling Image." title="Darjeeling Image">
+                    <figure>
+                        <figcaption>Darjeeling is a beautiful place to visit during my vacation
+                        </figcaption>
+                        <p>
+                            <code>&lt;li&gt;Darjeeling&lt;/li&gt;</code>
+                        </p>
+                    </figure>
+                </li>
+                <li>Shimla
+                    <img src="img/shimla.jpg" alt="Shimla Image." title="Shimla Image">
+                    <figure>
+                        <figcaption>Shimla is a beautiful place to visit during my vacation
+                        </figcaption>
+                        <p>
+                            <code>&lt;li&gt;Shimla&lt;/li&gt;</code>
+                        </p>
+                    </figure>
+                </li>
+                <li>Goa
+                    <img src="img/Goa.jpg" alt="Goa Image." title="Goa Image">
+                    <figure>
+                        <figcaption>Goa is a beautiful place to visit during my vacation.
+                        </figcaption>
+                        <p>
+                            <code>&lt;li&gt;Goa&lt;/li&gt;</code>
+                        </p>
+                    </figure>
+                </li>
             </ul>
         </div>
+
+        <br>                
+
         <!-- Places I want to avoid -->
+        <div id="places-to-avoid"></div>
         <h3>Places I want to avoid:</h3>
         <p>Anywhere Cold. no way!</p>
         <p>Here are some details about the places I want to avoid during my vacation...</p>
-        <div class="places-to-avoid">
             <ul>
                 <li>Delhi</li>
                 <li>Mumbai</li>
@@ -73,9 +105,13 @@
         </section>
 
         <hr>
-
+        <!-- My Look with my girlfriend -->
         <h1>The Look I want to be in:</h1>
-        <img src="file_00000000b7cc81fdb498313f70ff3afb.png" alt="Our future image">
+        <figure>
+            <img src="img/file_00000000b7cc81fdb498313f70ff3afb.png" alt="Our future image" 
+            title="Our future image">
+            <figcaption>My desired look for the future.</figcaption>
+        </figure>
 
         <hr>
 
@@ -84,20 +120,17 @@
             <section id="food">
             <h2>My Favorite Foods</h2>
             <dl>
-                <dt>pizza
-                    <dd>pizza is a good food.</dd>
-                </dt>
-                <dt>burger
-                    <dd>burger is a delicious food.</dd>
-                </dt>
-                <dt>icecream
-                    <dd>icecream is a delicious food to eat that in a good way to eat that.</dd>
-                </dt>
+                <dt>pizza</dt>
+                <dd>pizza is a good food.</dd>
+                <dt>burger</dt>
+                <dd>burger is a delicious food.</dd>
+                <dt>icecream</dt>
+                <dd>icecream is a delicious food to eat that in a good way to eat that.</dd>
             </dl>
             </section>
 
             <hr>
-
+            <!-- The About me Page link -->
             &lt;&lt;&lt; &copy; <a href="about.html">Sayandeep Saha</a>&gt;&gt;&gt;
             <p>  
             <a href="#">Back to Top</a>
