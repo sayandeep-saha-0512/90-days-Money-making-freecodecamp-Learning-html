@@ -7,16 +7,18 @@
         <meta name="description" content="This is the page where we can contain and create as I learn in HTML.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- adding the icon/logo -->
-        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/500px-HTML5_logo_and_wordmark.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" type="image/x-icon">
+        <link rel="icon" href="img/HTML5.png" type="image/x-icon">
         <!-- Linking the stylesheet -->
         <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- Linking the JavaScript file -->
+        <link rel="script" href="script.js" type="text/javascript">
         <title>My first Web Page</title>
     </head>
 
     <body>
-        <h1>My first Web Page</h1>
         <header>
-            <nav>
+        <h1>My Goals for this year</h1>
+        <nav aria-label="Primary-Navigation">
                 <ul>
                     <li><a href="#html">Learning HTML</a></li>
                     <li><a href="#vacation">Vacation Plans</a></li>
@@ -25,35 +27,58 @@
                 </ul>
             </nav>
         </header>
+        
+        <main>
 
-        <h1>My Goals for this year</h1>
         <hr>
         
-        <section id="html">
-        <h2>I am  ready to learn HTML</h2>
-        <p>This is my first web page. I am learning HTML and this is my first attempt at creating a web page.</p>
-        <p>I am excited to learn more about HTML and web development!</p>
-
-        <h3>My daily Schedule:</h3>
-        <p>Let me tell you how:
-            <br>... I am learning about web development.
-            <br>... I plan out my schedule for the day.
-            <br>... I attend my classes and lectures &amp; use resources
-            <!-- The MDN HTML Documentation -->
-             <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a>
-            <br>... I work on my projects and assignments.
-        </p>
+        <article id="html">
+                <h2>I am  ready to learn HTML</h2>
+                <p>This is my first web page. I am learning HTML and this is my first attempt at creating a web page.</p> 
+                <p>I am excited to learn more about HTML and web development!</p>
+            <section>
+                <h3>HTML5</h3>
+            <img id="HTML5-Logo" src="img/HTML5.png" alt="HTML5 Logo" title="I am learning HTML5">
+            <figure>
+                <figcaption>An Example of HTML5 Logo</figcaption>
+                <p>
+                    <code>&lt;h1&gt;Hello Would!&lt;/h1&gt;</code>
+                </p>
+            </figure>
+            </section>
+            <section>
+            <h3>My daily Schedule:</h3>
+                <p>Let me tell you how:</p>
+                <ol>
+                    <br><li>... I am learning about web development.</li>
+                    <br><li>... I plan out my schedule for the day.</li>
+                    <br><li>... I attend my classes and lectures &amp; use resources</li>
+                    <!-- The MDN HTML Documentation -->
+                <abbr title="Mozilla Developer Network">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a>
+                </abbr>
+                <br><li>... I work on my projects and assignments.</li>
+            </ol>
+            <aside id="Coding hours & Timings">
+                <details>
+                    <summary>Guess the <mark>Number of hours</mark> I code Every Morning</summary>
+                    <p>I Start code at <time datetime="13:00">1 PM</time> & do it <time datetime="PT4H">4 hours</time></p>
+                </details>
+            </aside>
         </section>
+        </article>
 
         <hr>
         
-        <section id="vacation">
+        <article id="vacation">
         <h2>I Am also Planning a Vacation</h2>
         <p>I am really working hard so I am needed some rest to enjoy! &amp; relax</p>
         <p>So, I am Living in kolkata, West Bengal, India. I am planning to go to Darjeeling, West Bengal, India for my vacation...</p>
+        <section>
             <!-- Places I want to visit -->
         <h3>Places to Visit:</h3>
         <p>Here are some details about my upcoming vacation...</p>
+                <p>I am planning to visit the following places during my vacation:</p>
         <div class="places-to-visit">
             <ul>
                 <li>Darjeeling
@@ -88,11 +113,10 @@
                 </li>
             </ul>
         </div>
-
-        <br>                
-
+            </section>
+            <section>
         <!-- Places I want to avoid -->
-        <div id="places-to-avoid"></div>
+        <div id="places-to-avoid">
         <h3>Places I want to avoid:</h3>
         <p>Anywhere Cold. no way!</p>
         <p>Here are some details about the places I want to avoid during my vacation...</p>
@@ -103,37 +127,40 @@
             </ul>
         </div>
         </section>
+        </article>
 
         <hr>
         <!-- My Look with my girlfriend -->
-        <h1>The Look I want to be in:</h1>
+        <p>The Look I want to be in:</p>
         <figure>
             <img src="img/file_00000000b7cc81fdb498313f70ff3afb.png" alt="Our future image" 
             title="Our future image">
             <figcaption>My desired look for the future.</figcaption>
         </figure>
-
-        <hr>
+        </section>
+        </main>
 
         <footer>
-            <!-- Foods I Like -->
-            <section id="food">
-            <h2>My Favorite Foods</h2>
-            <dl>
-                <dt>pizza</dt>
-                <dd>pizza is a good food.</dd>
-                <dt>burger</dt>
-                <dd>burger is a delicious food.</dd>
-                <dt>icecream</dt>
-                <dd>icecream is a delicious food to eat that in a good way to eat that.</dd>
-            </dl>
-            </section>
+        <!-- Foods I Like -->
+            <article id="food">
+                <p>My favrite Foods</p>
+                <dl>
+                    <dt>pizza</dt>
+                    <dd>pizza is a good food.</dd>
+                    <dt>burger</dt>
+                    <dd>burger is a delicious food.</dd>
+                    <dt>icecream</dt>
+                    <dd>icecream is a delicious food to eat that in a good way to eat that.</dd>
+                </dl>
+            </article>
 
-            <hr>
-            <!-- The About me Page link -->
-            &lt;&lt;&lt; &copy; <a href="about.html">Sayandeep Saha</a>&gt;&gt;&gt;
-            <p>  
-            <a href="#">Back to Top</a>
+                <hr>
+
+                <!-- The About me Page link -->
+                <p>&lt;&lt;&lt; &copy; <a href="about.html">Sayandeep Saha</a>&gt;&gt;&gt;</p>
+                <p>  
+                <a href="#">Back to Top</a>
+                </p>
         </footer>
     </body>
 </html>

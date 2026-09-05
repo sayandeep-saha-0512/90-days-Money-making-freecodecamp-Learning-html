@@ -27,12 +27,18 @@ a:hover, a:active {
 }
 
 img {
-    display: block;
     text-align: center;
     width: 100%;
     height: auto;
     padding: 0;
     margin: auto;
+}
+#HTML5-Logo {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 .places-to-visit ul {
