@@ -11,7 +11,7 @@
         <!-- Linking the stylesheet -->
         <link rel="stylesheet" href="style.css" type="text/css">
         <!-- Linking the JavaScript file -->
-        <link rel="script" href="script.js" type="text/javascript">
+        <script src="script.js" defer></script>
         <title>My first Web Page</title>
     </head>
 
@@ -50,16 +50,16 @@
             <h3>My daily Schedule:</h3>
                 <p>Let me tell you how:</p>
                 <ol>
-                    <br><li>... I am learning about web development.</li>
-                    <br><li>... I plan out my schedule for the day.</li>
-                    <br><li>... I attend my classes and lectures &amp; use resources</li>
+                    <li>... I am learning about web development.</li>
+                    <li>... I plan out my schedule for the day.</li>
+                    <li>... I attend my classes and lectures &amp; use resources</li>
                     <!-- The MDN HTML Documentation -->
-                <abbr title="Mozilla Developer Network">
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a>
-                </abbr>
-                <br><li>... I work on my projects and assignments.</li>
-            </ol>
-            <aside id="Coding hours & Timings">
+                    <li><abbr title="Mozilla Developer Network">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a>
+                    </abbr></li>
+                    <li>... I work on my projects and assignments.</li>
+                </ol>
+                <aside id="My-coing-hours">
                 <details>
                     <summary>Guess the <mark>Number of hours</mark> I code Every Morning</summary>
                     <p>I Start code at <time datetime="13:00">1 PM</time> & do it <time datetime="PT4H">4 hours</time></p>
@@ -71,10 +71,13 @@
         <hr>
         
         <article id="vacation">
-        <h2>I Am also Planning a Vacation</h2>
+        <h3>Our Vacation Plans</h3>
+        <p>Here are some details about the places I want to visit & wouldn't visist...</p>
+
+            <section>
+        <h2>Our Vacation Planing</h2>
         <p>I am really working hard so I am needed some rest to enjoy! &amp; relax</p>
         <p>So, I am Living in kolkata, West Bengal, India. I am planning to go to Darjeeling, West Bengal, India for my vacation...</p>
-        <section>
             <!-- Places I want to visit -->
         <h3>Places to Visit:</h3>
         <p>Here are some details about my upcoming vacation...</p>
@@ -113,8 +116,8 @@
                 </li>
             </ul>
         </div>
-            </section>
-            <section>
+        </section>
+        <section>
         <!-- Places I want to avoid -->
         <div id="places-to-avoid">
         <h3>Places I want to avoid:</h3>
@@ -137,13 +140,14 @@
             title="Our future image">
             <figcaption>My desired look for the future.</figcaption>
         </figure>
-        </section>
+
         </main>
 
         <footer>
         <!-- Foods I Like -->
-            <article id="food">
-                <p>My favrite Foods</p>
+        <article id="food">
+                <h3>Foods I Like</h3>
+                <p>Here are some details about the foods I like...</p>
                 <dl>
                     <dt>pizza</dt>
                     <dd>pizza is a good food.</dd>
