@@ -1,35 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Sayandeep Saha">
+        <meta name="description" content="About Sayandeep Saha and his HTML learning journey.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- adding the icon/logo -->
-        <link rel="icon" href="img/HTML5.png" type="image/x-icon">
-        <!-- Linking the stylesheet -->
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <title>Hi I am Sayandeep Saha</title>
+        <link rel="icon" href="img/HTML5.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <title>About Sayandeep | HTML Learning Journal</title>
     </head>
+
     <body>
-        
-        <h1>Hi I am Sayandeep Saha</h1>
-        <hr>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
 
-        <div class="para-001">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci labore natus rerum, aspernatur velit harum? Dolorem sed fugit doloremque dolor illo, repellendus enim qui nisi asperiores, itaque nostrum consectetur doloribus?
-            </p>
-        </div>
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="site-brand" href="index.html" aria-label="HTML Learning Journal home">
+                    <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+                    <span>HTML Learning Journal</span>
+                </a>
+                <nav aria-label="Page navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-        <hr>
-        <ul>
-            <li>download <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3iNEAMNnMfuuc5XraZGzrfk7IseFAUzPYT-tsj8j7c4pzZBuSG3L6vyg&s=10" download>HTML5 Logo</a></li>
-            <li>download <a href="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-2011.png" download>CSS Logo</a></li>
-            <li>Contact me at: <a href="mailto:sayandeep.saha@example.com">sayandeep.saha@example.com</a></li>
-            <li>Or call me: <a href="tel:+1-123-456-7890">my phone number</a>.</li>
-            <li>Open <a href="https://www.google.com" target="_blank">Google</a> in a new tab.</li>
-        </ul>
-        <hr>
-        &lt;&lt;&lt;&copy; <a href="index.html">Main Page</a> &gt;&gt;&gt;
+        <main id="main-content">
+            <section class="hero" aria-labelledby="page-title">
+                <p class="eyebrow">About the learner</p>
+                <h1 id="page-title">Hi, I am Sayandeep Saha.</h1>
+                <p class="hero-copy">I am building a dependable foundation in HTML, CSS, and JavaScript through small projects and regular practice.</p>
+                <div class="hero-actions">
+                    <a class="button" href="index.html">Read my learning journal</a>
+                    <a class="text-link" href="index.html#contact">Send a message <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </section>
+
+            <section class="content-section" aria-labelledby="approach-title">
+                <div class="section-heading">
+                    <p class="eyebrow">My approach</p>
+                    <h2 id="approach-title">Learn the principle, then build with it.</h2>
+                    <p>I am using the 90-day challenge to move from memorising tags to understanding why a page is structured in a particular way.</p>
+                </div>
+                <div class="learning-grid">
+                    <article class="feature-card">
+                        <img src="img/HTML5.png" alt="HTML5 logo" width="240" height="240">
+                        <div>
+                            <h3>Current focus</h3>
+                            <ul class="check-list">
+                                <li>Semantic HTML</li>
+                                <li>Responsive CSS</li>
+                                <li>Accessible interactions</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <aside class="note-card">
+                        <p class="eyebrow">Principle</p>
+                        <h3>Make the next version clearer than the last.</h3>
+                        <p>Every exercise is an opportunity to improve naming, structure, accessibility, and visual communication.</p>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="content-section" aria-labelledby="links-title">
+                <div class="section-heading">
+                    <p class="eyebrow">Useful links</p>
+                    <h2 id="links-title">The references behind the practice.</h2>
+                </div>
+                <ul class="check-list">
+                    <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank" rel="noopener noreferrer">FreeCodeCamp Responsive Web Design curriculum</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN HTML documentation</a></li>
+                    <li><a href="mailto:sayandeep.saha@example.com">Email Sayandeep</a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; <span id="current-year">2026</span> Sayandeep Saha</p>
+            <a class="text-link" href="index.html">Back to home <span aria-hidden="true">&rarr;</span></a>
+        </footer>
     </body>
-
 </html>

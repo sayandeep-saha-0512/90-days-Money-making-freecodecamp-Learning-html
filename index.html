@@ -1,239 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
     <head>
+        <!-- Document metadata and the shared assets used by this page. -->
         <meta charset="UTF-8">
         <meta name="author" content="Sayandeep Saha">
-        <meta name="description" content="This is the page where we can contain and create as I learn in HTML.">
+        <meta name="description" content="Sayandeep's accessible HTML learning journal and practice projects.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- adding the icon/logo -->
-        <link rel="icon" href="img/HTML5.png" type="image/x-icon">
-        <!-- Linking the stylesheet -->
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <!-- Linking the JavaScript file -->
+        <link rel="icon" href="img/HTML5.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
-        <title>My first Web Page</title>
+        
+        <title>HTML Learning Journal | Sayandeep Saha</title>
     </head>
 
     <body>
-        <header>
-        <h1>My Goals for this year</h1>
-        <nav aria-label="Primary-Navigation">
-                <ul>
-                    <li><a href="#html">Learning HTML</a></li>
-                    <li><a href="#vacation">Vacation Plans</a></li>
-                    <li><a href="#food">food</a></li>
-                    <li><a href="#places-to-avoid">Places to Avoid</a></li>
-                </ul>
-            </nav>
+        <!-- Keyboard users can bypass repeated navigation and reach the page content directly. -->
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+
+        <!-- The sticky header provides consistent branding and links to page sections. -->
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="site-brand" href="index.html" aria-label="HTML Learning Journal home">
+                    <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+                    <span>HTML Learning Journal</span>
+                </a>
+
+                <nav aria-label="Primary navigation">
+                    <ul>
+                        <li><a href="#learning">Learning</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#travel">Travel</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        
-        <main>
 
-        <hr>
-        
-        <article id="html">
-                <h2>I am  ready to learn HTML</h2>
-                <p>This is my first web page. I am learning HTML and this is my first attempt at creating a web page.</p> 
-                <p>I am excited to learn more about HTML and web development!</p>
-            <section>
-                <h3>HTML5</h3>
-            <img id="HTML5-Logo" src="img/HTML5.png" alt="HTML5 Logo" title="I am learning HTML5">
-            <figure>
-                <figcaption>An Example of HTML5 Logo</figcaption>
-                <p>
-                    <code>&lt;h1&gt;Hello Would!&lt;/h1&gt;</code>
-                </p>
-            </figure>
+        <main id="main-content">
+            <!-- The hero introduces the purpose of this learning journal. -->
+            <section class="hero" aria-labelledby="page-title">
+                <p class="eyebrow">90 days of deliberate practice</p>
+                <h1 id="page-title">Learning the web, one well-structured page at a time.</h1>
+                <p class="hero-copy">A simple journal of my HTML practice, daily habits, and the ideas I want to build next.</p>
+                <div class="hero-actions">
+                    <a class="button" href="#learning">Explore my progress</a>
+                    <a class="text-link" href="about.html">About Sayandeep <span aria-hidden="true">&rarr;</span></a>
+                </div>
             </section>
-            <section>
-            <h3>My daily Schedule:</h3>
-                <p>Let me tell you how:</p>
-                <ol>
-                    <li>... I am learning about web development.</li>
-                    <li>... I plan out my schedule for the day.</li>
-                    <li>... I attend my classes and lectures &amp; use resources</li>
-                    <!-- The MDN HTML Documentation -->
-                    <li><abbr title="Mozilla Developer Network">
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Documentation</a>
-                    </abbr></li>
-                    <li>... I work on my projects and assignments.</li>
-                </ol>
-                <aside id="My-coing-hours">
-                <details>
-                    <summary>Guess the <mark>Number of hours</mark> I code Every Morning</summary>
-                    <p>I Start code at <time datetime="13:00">1 PM</time> & do it <time datetime="PT4H">4 hours</time></p>
+
+            <!-- This section records the HTML concepts currently being practised. -->
+            <section id="learning" class="content-section" aria-labelledby="learning-title">
+                <div class="section-heading">
+                    <p class="eyebrow">01 / Foundations</p>
+                    <h2 id="learning-title">I am ready to learn HTML.</h2>
+                    <p>HTML gives a page meaning before CSS gives it style. I am practicing how to choose the right element, write useful content, and build pages that work for everyone.</p>
+                </div>
+
+                <div class="learning-grid">
+                    <article class="feature-card">
+                        <img src="img/HTML5.png" alt="HTML5 logo" width="240" height="240">
+                        <div>
+                            <h3>What I am practicing</h3>
+                            <ul class="check-list">
+                                <li>Semantic page structure</li>
+                                <li>Accessible headings and links</li>
+                                <li>Forms with useful labels</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <aside class="note-card">
+                        <p class="eyebrow">A useful reference</p>
+                        <h3>Learn from the platform builders.</h3>
+                        <p>When I forget how an element works, I check the official documentation instead of guessing.</p>
+                        <a class="text-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Read MDN's HTML guide <span aria-hidden="true">&rarr;</span></a>
+                    </aside>
+                </div>
+            </section>
+
+            <!-- The schedule demonstrates accessible details and table markup. -->
+            <section id="schedule" class="content-section" aria-labelledby="schedule-title">
+                <div class="section-heading">
+                    <p class="eyebrow">02 / Practice rhythm</p>
+                    <h2 id="schedule-title">Small, consistent sessions.</h2>
+                    <p>My schedule is a guide, not a performance test. The important part is returning to the work and recording what I learn.</p>
+                </div>
+
+                <details class="hours-note">
+                    <summary>How much time do I usually code?</summary>
+                    <p>I usually start at <time datetime="13:00">1:00 PM</time> and practice for about <time datetime="PT4H">four hours</time>.</p>
                 </details>
-            </aside>
 
-            <br>
-            <!-- Table -->
-                <table>
-                    <caption>My Daily Schedule</caption>
-                    <thead>
-                        <tr>
-                            <!-- Table Headers -->
-                             <th>&nbsp; Timings</th>
-                            <th scope="col">Time</th>
-                            <th scope="col">Activity</th>
-                        </tr>
-                        <tr>
-                            <th scope="row">Morning</th>
-                            <td>
-                                <time datetime="13:00">1 PM</time> - <time datetime="17:00">5 PM</time>
-                            </td>
-                            <td>Write code</td>
-                    </thead>
-                    <tbody>
-
-                    <!-- Table Data-1 -->
-                        <tr>
-                        <th scope="row">Morning</th>
-                            <td>
-                                <time datetime="13:00">1 PM</time> - <time datetime="17:00">5 PM</time>
-                            </td>
-                            <td>Write code</td>
-                        </tr>
-                        <tr>
-                            <!-- Table Data-2 -->
-                            <th scope="row">Break</th>
-                            <td>
-                                <time datetime="13:00">1 PM</time> - <time datetime="17:00">5 PM</time>
-                            </td>
-                            <td>Write code</td>
-                        </tr>
-                        <tr>
-                            <!-- Table Data-3 -->
-                            <th scope="row">Evening</th>
-                            <td>
-                                <time datetime="13:00">1 PM</time> - <time datetime="17:00">5 PM</time>
-                            </td>
-                            <td>Write code</td>
-                        </tr>
-                        <tr>
-                            <!-- Table Data-4 -->
-                            <th scope="row">Afternoon</th>
-                            <td>
-                                <time datetime="13:00">1 PM</time> - <time datetime="17:00">5 PM</time>
-                            </td>
-                            <td>Write code</td>
-                        </tr>
-                        <!-- Table Data-5 -->
-                        <tr>
-                            <th scope="row">Night</th>
-                            <td rowspan="2">All Others Time</td>
-
-                            <td>Sleeping</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" >Eating in Night before Sleep</th>
-                            <td>Eating</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3">That's the what's I can do Every day, 5 days  in a week just do the</td>
-                        </tr>
-                    </tfoot>
-                </table>
+                <div class="table-wrapper">
+                    <table>
+                        <caption>My weekly practice schedule</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Session</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Focus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Afternoon</th>
+                                <td><time datetime="13:00">1:00 PM</time> &ndash; <time datetime="15:00">3:00 PM</time></td>
+                                <td>Learn a new concept</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Late afternoon</th>
+                                <td><time datetime="15:30">3:30 PM</time> &ndash; <time datetime="17:00">5:00 PM</time></td>
+                                <td>Build a small exercise</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Evening</th>
+                                <td><time datetime="19:00">7:00 PM</time> &ndash; <time datetime="20:00">8:00 PM</time></td>
+                                <td>Review and write notes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
-        </article>
 
-        <hr>
-        
-        <article id="vacation">
-            <h2>Our Vacation Planing</h2>
-            <p>I am really working hard so I am needed some rest to enjoy! &amp; relax</p>
-            <p>So, I am Living in kolkata, West Bengal, India. I am planning to go to Darjeeling, West Bengal, India for my vacation...</p>
+            <!-- Travel cards provide a practical example of repeated article content. -->
+            <section id="travel" class="content-section" aria-labelledby="travel-title">
+                <div class="section-heading">
+                    <p class="eyebrow">03 / Life outside the editor</p>
+                    <h2 id="travel-title">Places I want to visit.</h2>
+                    <p>Rest is part of the process. These are a few places I would like to explore from my home in Kolkata, West Bengal.</p>
+                </div>
 
-            <section>
-                <!-- Places I want to visit -->
-            <h3>Places to Visit:</h3>
-            <p>Here are some details about my upcoming vacation...</p>
-                    <p>I am planning to visit the following places during my vacation:</p>
-            <div class="places-to-visit">
-                <ul>
-                    <li>Darjeeling
-                        <img src="img/dargilling-images.jpg" alt="Darjeeling Image." title="Darjeeling Image">
-                        <figure>
-                            <figcaption>Darjeeling is a beautiful place to visit during my vacation
-                            </figcaption>
-                            <p>
-                                <code>&lt;li&gt;Darjeeling&lt;/li&gt;</code>
-                            </p>
-                        </figure>
-                    </li>
-                    <li>Shimla
-                        <img src="img/shimla.jpg" alt="Shimla Image." title="Shimla Image">
-                        <figure>
-                            <figcaption>Shimla is a beautiful place to visit during my vacation
-                            </figcaption>
-                            <p>
-                                <code>&lt;li&gt;Shimla&lt;/li&gt;</code>
-                            </p>
-                        </figure>
-                    </li>
-                    <li>Goa
-                        <img src="img/Goa.jpg" alt="Goa Image." title="Goa Image">
-                        <figure>
-                            <figcaption>Goa is a beautiful place to visit during my vacation.
-                            </figcaption>
-                            <p>
-                                <code>&lt;li&gt;Goa&lt;/li&gt;</code>
-                            </p>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-            </section> 
-            <section>
-            <!-- Places I want to avoid -->
-            <div id="places-to-avoid">
-            <h3>Places I want to avoid:</h3>
-            <p>Anywhere Cold. no way!</p>
-            <p>Here are some details about the places I want to avoid during my vacation...</p>
-                <ul>
-                    <li>Delhi</li>
-                    <li>Mumbai</li>
-                    <li>Chennai</li>
-                </ul>
-            </div>
+                <div class="destination-grid">
+                    <article class="destination-card">
+                        <img src="img/dargilling-images.jpg" alt="Mountain landscape in Darjeeling" width="640" height="400" loading="lazy">
+                        <div class="destination-card-body">
+                            <h3>Darjeeling</h3>
+                            <p>Mountain views, quiet mornings, and a slower pace.</p>
+                        </div>
+                    </article>
+                    <article class="destination-card">
+                        <img src="img/shimla.jpg" alt="Landscape in Shimla" width="640" height="400" loading="lazy">
+                        <div class="destination-card-body">
+                            <h3>Shimla</h3>
+                            <p>A chance to walk, look around, and take a proper break.</p>
+                        </div>
+                    </article>
+                    <article class="destination-card">
+                        <img src="img/Goa.jpg" alt="Coastline in Goa" width="640" height="400" loading="lazy">
+                        <div class="destination-card-body">
+                            <h3>Goa</h3>
+                            <p>Sun, water, and a little distance from the screen.</p>
+                        </div>
+                    </article>
+                </div>
             </section>
-        </article>
 
-        <hr>
-        <!-- My Look with my girlfriend -->
-        <p>The Look I want to be in:</p>
-        <figure>
-            <img src="img/file_00000000b7cc81fdb498313f70ff3afb.png" alt="Our future image" 
-            title="Our future image">
-            <figcaption>My desired look for the future.</figcaption>
-        </figure>
+            <!-- A description list is appropriate for each food item and its explanation. -->
+            <section class="content-section" aria-labelledby="food-title">
+                <div class="section-heading">
+                    <p class="eyebrow">04 / Simple favourites</p>
+                    <h2 id="food-title">Food I like.</h2>
+                </div>
+                <dl class="food-list">
+                    <div>
+                        <dt>Pizza</dt>
+                        <dd>A reliable favourite with many possibilities.</dd>
+                    </div>
+                    <div>
+                        <dt>Burger</dt>
+                        <dd>Comforting, filling, and easy to enjoy.</dd>
+                    </div>
+                    <div>
+                        <dt>Ice cream</dt>
+                        <dd>A sweet finish after a long day of practice.</dd>
+                    </div>
+                </dl>
+            </section>
 
+            <!-- This form is intentionally front-end only until a real server is connected. -->
+            <section id="contact" class="content-section contact-section" aria-labelledby="contact-title">
+                <div class="section-heading">
+                    <p class="eyebrow">05 / Say hello</p>
+                    <h2 id="contact-title">Have a question?</h2>
+                    <p>This form is a front-end learning exercise. It validates your message in the browser but does not send data to a server yet.</p>
+                </div>
+
+                <form id="contact-form" data-demo-form="true" action="#contact" method="post">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" autocomplete="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" autocomplete="tel" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter your message subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="decade">Favourite decade</label>
+                            <input type="number" id="decade" name="decade" min="1950" max="2020" step="10" value="1980" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter a password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="coffee">Favourite coffee</label>
+                            <input type="text" id="coffee" name="coffee" list="coffee-list" placeholder="Select your favourite coffee">
+                            <datalist id="coffee-list">
+                                <option value="Regular"></option>
+                                <option value="Ristretto"></option>
+                                <option value="Flat white"></option>
+                                <option value="Cortado"></option>
+                                <option value="Espresso"></option>
+                                <option value="Latte"></option>
+                                <option value="Cappuccino"></option>
+                                <option value="Americano"></option>
+                                <option value="Mocha"></option>
+                                <option value="Macchiato"></option>
+                                <option value="Affogato"></option>
+                                <option value="Irish"></option>
+                                <option value="Turkish"></option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button class="button" type="submit">Prepare message</button>
+                    </div>
+                    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+
+            <section class="content-section preferences-section" aria-labelledby="preferences-title">
+                <div class="section-heading">
+                    <p class="eyebrow">06 / Quick preferences</p>
+                    <h2 id="preferences-title">A few small things I enjoy.</h2>
+                    <p>These are quick front-end practice fields that keep the page interactive without creating a confusing, duplicated form layout.</p>
+                </div>
+
+                <form class="survey-form" data-demo-form="true" action="#preferences-title" method="post">
+                    <div class="form-grid">
+                        <fieldset class="form-group fieldset-group">
+                            <legend>What is your favourite food?</legend>
+                            <div class="choice-list">
+                                <label><input type="radio" name="favorite-food" value="Pizza" checked> Pizza</label>
+                                <label><input type="radio" name="favorite-food" value="Burger"> Burger</label>
+                                <label><input type="radio" name="favorite-food" value="Tacos"> Tacos</label>
+                                <label><input type="radio" name="favorite-food" value="Biryani"> Biryani</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-group fieldset-group">
+                            <legend>Which pet do you like most?</legend>
+                            <div class="choice-list">
+                                <label><input type="checkbox" name="pet" value="Dog"> Dog</label>
+                                <label><input type="checkbox" name="pet" value="Cat"> Cat</label>
+                                <label><input type="checkbox" name="pet" value="Elephant"> Elephant</label>
+                                <label><input type="checkbox" name="pet" value="Royal Bengal Tiger"> Royal Bengal Tiger</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">A quick note for me</label>
+                        <textarea id="notes" name="notes" rows="5" placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="button" type="submit">Send note</button>
+                        <button class="button button-secondary" type="reset">Reset</button>
+                    </div>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </section>
         </main>
 
-        <footer>
-        <!-- Foods I Like -->
-        <article id="food">
-                <h3>Foods I Like</h3>
-                <p>Here are some details about the foods I like...</p>
-                <dl>
-                    <dt>pizza</dt>
-                    <dd>pizza is a good food.</dd>
-                    <dt>burger</dt>
-                    <dd>burger is a delicious food.</dd>
-                    <dt>icecream</dt>
-                    <dd>icecream is a delicious food to eat that in a good way to eat that.</dd>
-                </dl>
-            </article>
-
-                <hr>
-
-                <!-- The About me Page link -->
-                <p>&lt;&lt;&lt; &copy; <a href="about.html">Sayandeep Saha</a>&gt;&gt;&gt;</p>
-                <p>  
-                <a href="#">Back to Top</a>
-                </p>
+        <!-- The footer contains ownership information and a keyboard-accessible return link. -->
+        <footer class="site-footer">
+            <p>&copy; <span id="current-year">2026</span> Sayandeep Saha</p>
+            <a class="text-link" href="#main-content">Back to top <span aria-hidden="true">&uarr;</span></a>
         </footer>
     </body>
 </html>

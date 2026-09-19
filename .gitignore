@@ -1,2 +1,12 @@
+# Local environment files may contain secrets and should never be committed.
 .env
+.env.*
+!.env.example
+
+# Editor and operating-system files are machine-specific noise.
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Images are currently kept out of version control while the asset collection is being organized.
 img/

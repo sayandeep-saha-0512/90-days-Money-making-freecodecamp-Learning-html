@@ -1,68 +1,73 @@
 # 90 Days of HTML
 
-> A deliberate, project-based journey from HTML fundamentals to production-quality markup.
+A small, project-based learning journal for building strong HTML, CSS, and accessibility fundamentals.
 
-This repository contains my notes, experiments, and exercises while completing the [FreeCodeCamp.org Responsive Web Design curriculum](https://www.freecodecamp.org/learn/2022/responsive-web-design/).
+This is a beginner-friendly static site. It is intentionally free of frameworks and build tools so the relationship between markup, styling, and browser behavior stays easy to see.
 
-The objective is not simply to memorize tags. It is to learn how to structure information clearly, create accessible experiences, and build a dependable foundation for CSS, JavaScript, and modern web development.
+## What I am practising
 
-## What I Am Building
+- Writing semantic HTML with meaningful page landmarks
+- Building accessible navigation, images, tables, and forms
+- Creating responsive layouts with modern CSS
+- Adding small, progressive enhancements with JavaScript
+- Reading official documentation instead of guessing
+- Reviewing and improving previous work
 
-- A strong mental model of the HTML document structure
-- Semantic pages that communicate meaning to browsers, users, and assistive technology
-- Accessible forms with clear labels and useful controls
-- Reliable navigation using links, paths, email, telephone, and download actions
-- Clean, readable markup that can be maintained and extended
-- A public record of consistent practice across 90 days
+## Project map
 
-## Curriculum
+- [index.html](index.html): the main learning journal and HTML practice page
+- [about.html](about.html): a short profile and learning approach
+- [style.css](style.css): shared responsive visual styles
+- [script.js](script.js): active navigation, smooth scrolling, and demo form feedback
+- [img/](img/): images used by the pages
+- [scripts/validate-site.ps1](scripts/validate-site.ps1): repeatable checks for pages, anchors, assets, and JavaScript syntax
+- [.editorconfig](.editorconfig): consistent indentation and file formatting
 
-The learning path follows a simple progression:
+## Practice loop
 
-1. Document structure, elements, attributes, and nesting
-2. Text hierarchy, paragraphs, lists, links, and images
-3. Forms, labels, input types, and user interaction
-4. Semantic HTML, accessibility, and page landmarks
-5. FreeCodeCamp exercises and responsive web design projects
-6. Review, debugging, refactoring, and portfolio presentation
+1. Learn one concept from FreeCodeCamp or [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML).
+2. Use it in a small, focused example.
+3. Open the page in a browser and test the keyboard path.
+4. Check the structure, content, and responsive layout.
+5. Write down what changed and what to practise next.
 
-## Repository Map
+## Quality checklist
 
-| File | Purpose |
-| --- | --- |
-| [`index.html`](index.html) | First-page exercise covering structure, text, lists, navigation, and footer content |
-| [`about.html`](about.html) | Personal page with email, telephone, download, and external links |
-| [`headings.html`](headings.html) | Practice for document hierarchy and heading structure |
-| [`links.html`](links.html) | Link and navigation experiments |
-| [`froms.html`](froms.html) | Form practice; the filename is retained from the original exercise |
-| [`semantic-elements.html`](semantic-elements.html) | Exercises for meaningful HTML page structure |
+Before calling an exercise complete, check that:
 
-Some exercise files are currently placeholders and will be developed as the curriculum advances.
+- Every page has a useful title and description.
+- Headings follow a logical order.
+- Form controls have visible labels.
+- Images have useful alternative text.
+- Links describe their destination.
+- The page works without JavaScript.
+- Keyboard focus is visible.
+- The layout remains usable on a narrow screen.
 
-## Practice Loop
+## Run locally
 
-Each lesson follows the same loop:
+No build tools are required. Open [index.html](index.html) directly in a browser, or use the Live Server extension in VS Code for automatic refresh while editing.
 
-1. Learn the concept from FreeCodeCamp and the [MDN HTML documentation](https://developer.mozilla.org/en-US/docs/Web/HTML).
-2. Recreate the concept in a small, focused exercise.
-3. Open the page in a browser and inspect the result.
-4. Validate the markup, fix mistakes, and record what changed.
-5. Apply the concept in a larger project instead of leaving it as an isolated example.
+The contact form is currently a front-end exercise. It validates locally but does not send messages to a server.
 
-## Progress
+To run the project checks in PowerShell:
 
-- [x] Create the learning repository
-- [x] Practice basic document structure
-- [x] Practice headings, text, lists, and links
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\scripts\validate-site.ps1
+```
+
+The policy change applies only to the current terminal session.
+
+## Learning path
+
+- [x] Practise document structure, headings, text, lists, and links
+- [x] Add semantic landmarks and accessible form labels
+- [x] Build a responsive learning journal
 - [ ] Complete the HTML portion of the FreeCodeCamp curriculum
 - [ ] Build the required responsive web design projects
-- [ ] Review and improve every exercise for accessibility and maintainability
-- [ ] Complete the 90-day portfolio review
-
-## Run Locally
-
-No build tools are required. Open any `.html` file directly in a browser, or use the Live Server extension in VS Code for automatic refresh while editing.
+- [ ] Review each exercise with a validator and keyboard test
 
 ## Author
 
-Sayandeep Saha
+Sayandeep Saha (Aayushman Chaudhary)
